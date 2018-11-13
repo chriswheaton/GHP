@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Contract</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+      <ion-segment-button value="management">Management</ion-segment-button>
+      <ion-segment-button value="calculations">Calculations</ion-segment-button>
+      <ion-segment-button value="exclusions">Exclusions</ion-segment-button>
+      <ion-segment-button value="products">Products</ion-segment-button>
+      <ion-segment-button value="formulary">Formulary</ion-segment-button>
+      <ion-segment-button value="market">Market Basket</ion-segment-button>
+      <ion-segment-button value="performance">Performance</ion-segment-button>
+    </ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+        <div *ngSwitchCase="'management'">
+			<component-contract-calculations></component-contract-calculations>
+        </div>
+        <div *ngSwitchCase="'calculations'">
+			<component-contract-calculations></component-contract-calculations>
+        </div>
+        <div *ngSwitchCase="'exclusions'">
+			<component-contract-exclusions></component-contract-exclusions>
+        </div>
+        <div *ngSwitchCase="'products'">
+			<component-contract-products></component-contract-products>
+        </div>
+        <div *ngSwitchCase="'formulary'">
+			<conponent-contract-formulary></conponent-contract-formulary>
+		</div>
+        <div *ngSwitchCase="'market'">
+			<component-contract-market></component-contract-market>
+		</div>
+        <div *ngSwitchCase="'performance'">
+			<component-contract-performance></component-contract-performance>
+		</div>
+      </div>
+  </div>
+</ion-content>

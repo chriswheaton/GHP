@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Payments</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+      <ion-segment-button value="paymentDistribution">Payment Distribution</ion-segment-button>
+      <ion-segment-button value="paymentTerms">Payment Terms</ion-segment-button>
+      <ion-segment-button value="receiptManagement">Receipt Management</ion-segment-button>
+    </ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+        <div *ngSwitchCase="'paymentDistribution'">
+			<component-payment-distribution [periods]="periods" [manufacturers]="manufacturers"></component-payment-distribution>
+		</div>
+        <div *ngSwitchCase="'paymentTerms'">
+			<component-payment-terms></component-payment-terms>
+		</div>
+        <div *ngSwitchCase="'receiptManagement'">
+			<component-receipt-management></component-receipt-management>
+		</div>
+      </div>
+  </div>
+</ion-content>

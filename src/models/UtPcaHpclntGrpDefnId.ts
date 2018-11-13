@@ -1,0 +1,51 @@
+import { UtPcaHpclntGrpId } from './UtPcaHpclntGrpId';
+export class UtPcaHpclntGrpDefnId {
+	hpclntGrpDefnId?: number;
+	hpclntGrpId?: number;
+	hpclntGrpDefnIeId?: number;
+	hpdsgnId?: number;
+	hpclntGrpLkup1?: string;
+	hpclntGrpLkup2?: string;
+	hpclntGrpLkup3?: string;
+	hpclntGrpLkup4?: string;
+	hpclntGrpLkup5?: string;
+	hpclntGrpLkup6?: string;
+	hpclntGrpLkup7?: string;
+	hpclntGrpLkup8?: string;
+	hpclntGrpLkup9?: string;
+	hpclntGrpLkup10?: string;
+	hpclntGrpLkup11?: string;
+	hpclntGrpLkup12?: string;
+	hpclntGrpDefnEffecDt?: string;
+	hpclntGrpDefnTermDt?: string;
+	hpclntGrpDefnCreateDate?: string;
+	hpclntGrpDefnUpdateDate?: string;
+	lastChangeUser?: string;
+	lastChangeDate?: string;
+	hpclntGrp?: UtPcaHpclntGrpId;
+	constructor(obj: any = {}) {
+		this.hpclntGrpDefnId = obj.hpclntGrpDefnId;
+		this.hpclntGrpId = obj.hpclntGrpId;
+		this.hpclntGrpDefnIeId = obj.hpclntGrpDefnIeId;
+		this.hpdsgnId = obj.hpdsgnId;
+		this.hpclntGrpLkup1 = obj.hpclntGrpLkup1;
+		this.hpclntGrpLkup2 = obj.hpclntGrpLkup2;
+		this.hpclntGrpLkup3 = obj.hpclntGrpLkup3;
+		this.hpclntGrpLkup4 = obj.hpclntGrpLkup4;
+		this.hpclntGrpLkup5 = obj.hpclntGrpLkup5;
+		this.hpclntGrpLkup6 = obj.hpclntGrpLkup6;
+		this.hpclntGrpLkup7 = obj.hpclntGrpLkup7;
+		this.hpclntGrpLkup8 = obj.hpclntGrpLkup8;
+		this.hpclntGrpLkup9 = obj.hpclntGrpLkup9;
+		this.hpclntGrpLkup10 = obj.hpclntGrpLkup10;
+		this.hpclntGrpLkup11 = obj.hpclntGrpLkup11;
+		this.hpclntGrpLkup12 = obj.hpclntGrpLkup12;
+		this.hpclntGrpDefnEffecDt = obj.hpclntGrpDefnEffecDt;
+		this.hpclntGrpDefnTermDt = obj.hpclntGrpDefnTermDt;
+		this.hpclntGrpDefnCreateDate = obj.hpclntGrpDefnCreateDate;
+		this.hpclntGrpDefnUpdateDate = obj.hpclntGrpDefnUpdateDate;
+		this.lastChangeUser = obj.lastChangeUser;
+		this.lastChangeDate = obj.lastChangeDate;
+		this.hpclntGrp = new UtPcaHpclntGrpId(obj.hpclntGrp);
+	}
+}

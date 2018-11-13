@@ -1,0 +1,52 @@
+export class ClientMaster {
+	clnt_master_id_pk?: number;
+	master_id?: string;
+	master_name?: string;
+	status_code?: string;
+	notes?: string;
+	clinical_resource_reqd?: boolean;
+	formulary_consulting_tier?: number;
+	traditional_commercial_vol?: number;
+	margin?: number;
+	size?: number;
+	star_rating_for_relationship?: number;
+	star_rating?: number;
+	last_change_date_time?: string;
+	last_change_user?: string;
+	postAction?: string;
+	postController?: string;
+	onPostSuccessAction?: string;
+	onCancelAction?: string;
+	passwordChangeRequired?: string;
+	displayTitle?: string;
+	editMode?: boolean;
+	trackingState?: Array<number>;
+	modifiedProperties?: Array<string>;
+	entityIdentifier?: string;
+	constructor(obj: any = {}) {
+		this.clnt_master_id_pk = obj.clnt_master_id_pk;
+		this.master_id = obj.master_id;
+		this.master_name = obj.master_name;
+		this.status_code = obj.status_code;
+		this.notes = obj.notes;
+		this.clinical_resource_reqd = obj.clinical_resource_reqd;
+		this.formulary_consulting_tier = obj.formulary_consulting_tier;
+		this.traditional_commercial_vol = obj.traditional_commercial_vol;
+		this.margin = obj.margin;
+		this.size = obj.size;
+		this.star_rating_for_relationship = obj.star_rating_for_relationship;
+		this.star_rating = obj.star_rating;
+		this.last_change_date_time = obj.last_change_date_time;
+		this.last_change_user = obj.last_change_user;
+		this.postAction = obj.postAction;
+		this.postController = obj.postController;
+		this.onPostSuccessAction = obj.onPostSuccessAction;
+		this.onCancelAction = obj.onCancelAction;
+		this.passwordChangeRequired = obj.passwordChangeRequired;
+		this.displayTitle = obj.displayTitle;
+		this.editMode = obj.editMode;
+		this.trackingState = obj.trackingState;
+		this.modifiedProperties = obj.modifiedProperties;
+		this.entityIdentifier = obj.entityIdentifier;
+	}
+}

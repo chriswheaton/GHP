@@ -1,0 +1,22 @@
+<ion-split-pane [enabled]="this.user?.authenticated || platform">
+  <ion-menu [content]="content" *ngIf="this.user?.authenticated">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list class="app-navigation">
+        <button ion-item *ngFor="let p of pages" [class.active]="p.active" (click)="openPage(p)">
+          <ion-icon [name]="p.icon"></ion-icon> {{p.title}}
+        </button>
+        <button ion-item (click)="logout()">
+          <ion-icon name="log-out"></ion-icon> Logout
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <!-- the main content -->
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" main #content swipeBackEnabled="false"></ion-nav>
+</ion-split-pane>

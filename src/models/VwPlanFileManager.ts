@@ -1,0 +1,52 @@
+export class VwPlanFileManager {
+	bridge_clnt_hier_id_pk?: number;
+	clnt_name?: string;
+	clnt_hier_lvl2?: string;
+	clnt_hier_lvl3?: string;
+	clnt_hier_lvl4?: string;
+	clnt_id_fk?: number;
+	begin_date?: string;
+	end_date?: string;
+	hold_flag?: boolean;
+	vndr_hier_lvl1?: string;
+	vndr_hier_lvl2?: string;
+	vndr_hier_lvl3?: string;
+	vndr_name?: string;
+	vndr_code?: string;
+	bridge_vndr_hier_id_pk?: number;
+	postAction?: string;
+	postController?: string;
+	onPostSuccessAction?: string;
+	onCancelAction?: string;
+	displayTitle?: string;
+	editMode?: boolean;
+	trackingState?: Array<number>;
+	modifiedProperties?: Array<string>;
+	entityIdentifier?: string;
+	constructor(obj: any = {}) {
+		this.bridge_clnt_hier_id_pk = obj.bridge_clnt_hier_id_pk;
+		this.clnt_name = obj.clnt_name;
+		this.clnt_hier_lvl2 = obj.clnt_hier_lvl2;
+		this.clnt_hier_lvl3 = obj.clnt_hier_lvl3;
+		this.clnt_hier_lvl4 = obj.clnt_hier_lvl4;
+		this.clnt_id_fk = obj.clnt_id_fk;
+		this.begin_date = obj.begin_date;
+		this.end_date = obj.end_date;
+		this.hold_flag = obj.hold_flag;
+		this.vndr_hier_lvl1 = obj.vndr_hier_lvl1;
+		this.vndr_hier_lvl2 = obj.vndr_hier_lvl2;
+		this.vndr_hier_lvl3 = obj.vndr_hier_lvl3;
+		this.vndr_name = obj.vndr_name;
+		this.vndr_code = obj.vndr_code;
+		this.bridge_vndr_hier_id_pk = obj.bridge_vndr_hier_id_pk;
+		this.postAction = obj.postAction;
+		this.postController = obj.postController;
+		this.onPostSuccessAction = obj.onPostSuccessAction;
+		this.onCancelAction = obj.onCancelAction;
+		this.displayTitle = obj.displayTitle;
+		this.editMode = obj.editMode;
+		this.trackingState = obj.trackingState;
+		this.modifiedProperties = obj.modifiedProperties;
+		this.entityIdentifier = obj.entityIdentifier;
+	}
+}

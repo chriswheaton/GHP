@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Results</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+		<ion-segment-button value="calculations">Calculations</ion-segment-button>
+		<ion-segment-button value="client-segmentation">Client Segmentation</ion-segment-button>
+		<ion-segment-button value="contract-audit">Contract Audit</ion-segment-button>
+		<ion-segment-button value="drug-file-search">Drug File Search</ion-segment-button>
+		<ion-segment-button value="formulary">Formulary</ion-segment-button>
+		<ion-segment-button value="products">Products</ion-segment-button>
+	</ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+		<div *ngSwitchCase="'calculations'">
+<results-calculations></results-calculations>
+		</div>
+		<div *ngSwitchCase="'client-segmentation'">
+<results-client-segmentation></results-client-segmentation>
+		</div>
+		<div *ngSwitchCase="'contract-audit'">
+<results-contract-audit></results-contract-audit>
+		</div>
+		<div *ngSwitchCase="'drug-file-search'">
+<results-drug-file-search></results-drug-file-search>
+		</div>
+		<div *ngSwitchCase="'formulary'">
+<results-formulary></results-formulary>
+		</div>
+		<div *ngSwitchCase="'products'">
+<results-products></results-products>
+		</div>
+      </div>
+  </div>
+</ion-content>

@@ -1,0 +1,151 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Manufacturer:</ion-label>
+					<ion-select [(ngModel)]="manufacturer">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Contract:</ion-label>
+					<ion-select [(ngModel)]="contract">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<button ion-button>
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button>
+					<ion-icon name="refresh-circle"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Contract Details
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Name:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Termination Date:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Type:</ion-label>
+								<ion-select [(ngModel)]="type">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Status:</ion-label>
+								<ion-select [(ngModel)]="status">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Segmentation:</ion-label>
+								<ion-select [(ngModel)]="segmentation">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Exclusion Rule:</ion-label>
+								<ion-select [(ngModel)]="rule">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Template:</ion-label>
+								<ion-select [(ngModel)]="template">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Primary:</ion-label>
+								<ion-select [(ngModel)]="primary">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Notify:</ion-label>
+								<ion-select [(ngModel)]="notify">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label stacked>Comments:</ion-label>
+								<ion-textarea></ion-textarea>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-12>
+						<div float-right>
+							<button ion-button color="danger">
+								<ion-icon name="trash"></ion-icon>
+							</button>
+							<button ion-button color="secondary">
+								Save
+							</button>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>

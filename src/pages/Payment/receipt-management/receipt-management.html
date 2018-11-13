@@ -1,0 +1,303 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<ion-item>
+					<ion-label>Name:</ion-label>
+					<ion-select [(ngModel)]="name">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+
+			<ion-col col-2>
+				<button ion-button color="primary">Load</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Check
+			<div float-right>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Check Name</ion-col>
+					<ion-col>Receipt Date</ion-col>
+					<ion-col>Amount</ion-col>
+					<ion-col>Manufactuer</ion-col>
+					<ion-col>Comments</ion-col>
+					<ion-col>Create Date</ion-col>
+					<ion-col>Update Date</ion-col>
+					<ion-col>Delted Flag</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>Gtwy_Comm_22432423</ion-col>
+					<ion-col>mm/dd/yyyy</ion-col>
+					<ion-col>$5.00</ion-col>
+					<ion-col>Gtwy_Comm_22432423</ion-col>
+					<ion-col>Comments</ion-col>
+					<ion-col>mm/dd/yyyy</ion-col>
+					<ion-col>mm/dd/yyyy</ion-col>
+					<ion-col>FLAG</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Breakout
+			<div float-right>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Breakout Description</ion-col>
+					<ion-col>Period</ion-col>
+					<ion-col>Amount</ion-col>
+					<ion-col>Ntwrk Disc</ion-col>
+					<ion-col>Ing Cost</ion-col>
+					<ion-col>Disp Fee</ion-col>
+					<ion-col>Co-Pay</ion-col>
+					<ion-col>Rebate</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>Gtwy_Comm_22432423</ion-col>
+					<ion-col>mm/dd/yyyy</ion-col>
+					<ion-col>$5.00</ion-col>
+					<ion-col>Gtwy_Comm_22432423</ion-col>
+					<ion-col>Comments</ion-col>
+					<ion-col>mm/dd/yyyy</ion-col>
+					<ion-col>mm/dd/yyyy</ion-col>
+					<ion-col>FLAG</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Applicable Client Segmentation
+			<div float-right>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="search"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Client Segmentation</ion-col>
+					<ion-col>IE</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Products
+			<div float-right>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Period</ion-col>
+					<ion-col>Quantity</ion-col>
+					<ion-col>RX</ion-col>
+					<ion-col>Ntwrk Disc</ion-col>
+					<ion-col>Ing Cost</ion-col>
+					<ion-col>Disp Fee</ion-col>
+					<ion-col>Co-Pay</ion-col>
+					<ion-col>Rebate</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>
+
+
+<h1>Payment Terms</h1>
+<div padding>
+	<h3>Check</h3>
+	<table style="width:30%">
+		<tr>
+			<th>Check Name</th>
+			<th>Receipt Date</th>
+			<th>Amount</th>
+			<th>Manufactuer</th>
+			<th>Comments</th>
+			<th>Create Date</th>
+			<th>Update Date</th>
+			<th>Deleted Flag</th>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+	</table>
+</div>
+
+<div padding>
+	<h3>Breakout</h3>
+	<table style="width:30%">
+		<tr>
+			<th>Check Name</th>
+			<th>Receipt Date</th>
+			<th>Amount</th>
+			<th>Manufactuer</th>
+			<th>Comments</th>
+			<th>Create Date</th>
+			<th>Update Date</th>
+			<th>Deleted Flag</th>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+	</table>
+</div>
+
+<div padding>
+	<h3>Applicable Client Segmentation</h3>
+	<table style="width:30%">
+		<tr>
+			<th>Check Name</th>
+			<th>Receipt Date</th>
+			<th>Amount</th>
+			<th>Manufactuer</th>
+			<th>Comments</th>
+			<th>Create Date</th>
+			<th>Update Date</th>
+			<th>Deleted Flag</th>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+	</table>
+</div>
+
+<div padding>
+	<h3>Products</h3>
+	<table style="width:30%">
+		<tr>
+			<th>Check Name</th>
+			<th>Receipt Date</th>
+			<th>Amount</th>
+			<th>Manufactuer</th>
+			<th>Comments</th>
+			<th>Create Date</th>
+			<th>Update Date</th>
+			<th>Deleted Flag</th>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+		<tr>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>mm/dd/yyyy</td>
+			<td>5.00</td>
+			<td>Gtwy_Comm_2021491094</td>
+			<td>Unpaid</td>
+			<td>mm/dd/yyyy</td>
+			<td>mm/dd/yyyy</td>
+		</tr>
+	</table>
+</div>

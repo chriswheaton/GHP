@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Modeling</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+      <ion-segment-button value="dataset">Dataset</ion-segment-button>
+      <ion-segment-button value="instance">Instance</ion-segment-button>
+      <ion-segment-button value="results">Results</ion-segment-button>
+      <ion-segment-button value="reports">Reports</ion-segment-button>
+    </ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+        <div *ngSwitchCase="'dataset'">
+			<modeling-dataset></modeling-dataset>
+        </div>
+        <div *ngSwitchCase="'instance'">
+			<modeling-instance></modeling-instance>
+        </div>
+        <div *ngSwitchCase="'results'">
+			<modeling-results></modeling-results>
+        </div>
+        <div *ngSwitchCase="'reports'">
+			<modeling-reports></modeling-reports>
+		</div>
+      </div>
+  </div>
+</ion-content>

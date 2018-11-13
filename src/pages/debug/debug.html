@@ -1,0 +1,40 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>&nbsp;Debug</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-list>
+		<button ion-button block (click)="getClientMaster()">getClientMaster</button>
+		<button ion-button block (click)="getContractByClientId()">getContractByClientId</button>
+
+		<button ion-button block (click)="getFormularyDesignByClientId()">getFormularyDesignByClientId</button>
+<button ion-button block (click)="getSubSegmentationByHpfrmlyId()">getSubSegmentationByHpfrmlyId</button>
+		<button ion-button block (click)="getAllFormularyDesign()">getAllFormularyDesign</button>
+		<button ion-button block (click)="getFormularyRdlByFormularyIdPk()">getFormularyRdlByFormularyIdPk</button>
+		<button ion-button block (click)="getFormularyRdlRpu()">getFormularyRdlRpu</button>
+
+<button ion-button block (click)="getModeling(ModelingID)">getModeling id:{{ModelingID}}</button>
+<button ion-button block (click)="getModeling()">getModeling w.o. id</button>
+<button ion-button block (click)="getPayment(ModelingID)">getPayment id:{{ModelingID}}</button>
+<button ion-button block (click)="getPayment()">getPayment w.o. id</button>
+
+<button ion-button block (click)="getUserIsAlive()">getUserIsAlive</button>
+<button ion-button block (click)="getAllUsers()">getAllUsers</button>
+<button ion-button block (click)="authenticate()">authenticate</button>
+
+<button ion-button block (click)="getFinInboundDetailByHeaderId(PaymentInboundID)">getFinInboundDetailByHeaderId
+id:{{PaymentInboundID}}</button>
+<button ion-button block (click)="getPaymentReleaseDetailByReleaseId(PaymentReleaseID)">getPaymentReleaseDetailByReleaseId
+id:{{PaymentReleaseID}}</button>
+
+<button ion-button block (click)="getAllProOptFinInboundHeader()">getAllProOptFinInboundHeader</button>
+<button ion-button block (click)="getProOptFinInboundDetailProduct(PaymentInboundDetailProductID)">getProOptFinInboundDetailProduct
+id:{{PaymentInboundDetailProductID}}</button>
+
+
+	</ion-list>
+</ion-content>

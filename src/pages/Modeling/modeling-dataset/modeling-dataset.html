@@ -1,0 +1,129 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<ion-item>
+					<ion-label>Dataset:</ion-label>
+					<ion-select [(ngModel)]="dataset">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-6>
+				<button ion-button>
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button>
+					<ion-icon name="refresh-circle"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Dataset Details
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Dataset Name:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Model Type:</ion-label>
+								<ion-select [(ngModel)]="formularyDesign">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Base Start Date:</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="startDate"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>Base Term Date:</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="endDate"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>Client:</ion-label>
+								<ion-select [(ngModel)]="client">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Hierarchy 1:</ion-label>
+								<ion-select [(ngModel)]="h1">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Hierarchy 2:</ion-label>
+								<ion-select [(ngModel)]="h2">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Hierarchy 3:</ion-label>
+								<ion-select [(ngModel)]="h3">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Hierarchy 4:</ion-label>
+								<ion-select [(ngModel)]="h4">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-12>
+						<div float-right>
+							<button ion-button color="danger">
+								<ion-icon name="trash"></ion-icon>
+							</button>
+							<button ion-button color="secondary">
+								Save
+							</button>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>

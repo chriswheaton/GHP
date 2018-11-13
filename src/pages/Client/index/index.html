@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <img src="../../assets/imgs/logo_sm.png">
+      ProOptimizer Portal
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Client Setup</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+      <ion-segment-button value="segmentation">
+          Segmentation
+      </ion-segment-button>
+      <ion-segment-button value="formulary">
+          Formulary
+      </ion-segment-button>
+      <ion-segment-button value="period">
+          Period Maint.
+      </ion-segment-button>
+      <ion-segment-button value="manufacturer">
+          Manufacturer
+      </ion-segment-button>
+    </ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+		<div *ngSwitchCase="'segmentation'">
+			<component-client-segmentation></component-client-segmentation>
+		</div>
+		<div *ngSwitchCase="'formulary'">
+			<component-formulary-design></component-formulary-design>
+		</div>
+		<div *ngSwitchCase="'period'">
+			<component-period-maintenance></component-period-maintenance>
+		</div>
+		<div *ngSwitchCase="'manufacturer'">
+			<component-manufacturer></component-manufacturer>
+		</div>
+    </div>
+  </div>
+</ion-content>

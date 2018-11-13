@@ -1,0 +1,80 @@
+<ion-card>
+	<ion-card-header>
+		<ion-row col-6>
+			<ion-segment [(ngModel)]="segmentSelected">
+				<ion-segment-button value="pending">
+					Pending
+				</ion-segment-button>
+				<ion-segment-button value="released">
+					Released
+				</ion-segment-button>
+				<ion-segment-button value="paid">
+					Paid
+				</ion-segment-button>
+			</ion-segment>
+		</ion-row>
+	</ion-card-header>
+
+	<div padding-top padding-bottom>
+		<div padding-top padding-bottom [ngSwitch]="segmentSelected">
+			<div *ngSwitchCase="'pending'">
+				<h3>Released Amounts</h3>
+				<ion-item>
+					<ion-label>Period</ion-label>
+					<ion-select [(ngModel)]="period" multiple="true">
+						<ion-option *ngFor="let period of periods" [value]="period">{{period.RunName}}</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Manfacturer</ion-label>
+					<ion-select [(ngModel)]="manufacturer" multiple="true">>
+						<ion-option *ngFor="let manufacturer of manufacturers" [value]="manufacturer">{{manufacturer.PharmaName}}</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Date</ion-label>
+					<ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="MMMM YYYY DD" [(ngModel)]="selectedDate"></ion-datetime>
+				</ion-item>
+				<button ion-button color="primary">Load Report</button>
+				<button ion-button color="primary">Create Batch</button>
+			</div>
+
+			<div *ngSwitchCase="'released'">
+				<h3>Received Amounts Pending</h3>
+				<ion-item>
+					<ion-label>Period</ion-label>
+					<ion-select [(ngModel)]="period" multiple="true">>
+						<ion-option *ngFor="let period of p" [value]="period">{{p}}</ion-option>
+					</ion-select>
+				</ion-item>
+				<ion-item>
+					<ion-label>Manfacturer</ion-label>
+					<ion-select [(ngModel)]="period" multiple="true">>
+						<ion-option *ngFor="let period of p" [value]="period">{{p}}</ion-option>
+					</ion-select>
+				</ion-item>
+				<button ion-button color="primary">Display Released</button>
+				<button ion-button color="primary">Create Payment</button>
+			</div>
+
+			<div *ngSwitchCase="'paid'">
+				<ion-card>
+					<ion-card-header>
+						<ion-row>
+							<ion-col>Name</ion-col>
+							<ion-col>Comments</ion-col>
+							<ion-col>Create Date</ion-col>
+							<ion-col>Process Date</ion-col>
+						</ion-row>
+					</ion-card-header>
+						<ion-row>
+							<ion-col>Gtwy_Comm_2021491094</ion-col>
+							<ion-col>Paid</ion-col>
+							<ion-col>mm/dd/yyyy</ion-col>
+							<ion-col>mm/dd/yyyy</ion-col>
+						</ion-row>
+				</ion-card>
+			</div>
+		</div>
+	</div>
+</ion-card>

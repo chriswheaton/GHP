@@ -1,0 +1,174 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Manufacturer:</ion-label>
+					<ion-select [(ngModel)]="manufacturer">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Contract:</ion-label>
+					<ion-select [(ngModel)]="contract">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<button ion-button>
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button>
+					<ion-icon name="refresh-circle"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Contract Exclusion Applied
+			<div float-right>
+				<!-- <button ion-button small color="danger">
+					<ion-icon name="trash"></ion-icon>
+					</button>
+					<button ion-button small color="primary">
+					<ion-icon name="add-circle"></ion-icon>
+					</button>
+					<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+					</button>
+					<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+					</button>
+					<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+					</button>
+					<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+					</button> -->
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Exclusion Rules:</ion-label>
+							</ion-item>
+							<ion-row>
+								<ion-col col-8>
+									<ion-item>
+										<ion-label>Invalid Quantity</ion-label>
+										<ion-checkbox color="dark" checked="true"></ion-checkbox>
+									</ion-item>
+								</ion-col>
+								<ion-col col-4>
+									<button ion-button clear>Comments</button>
+								</ion-col>
+							</ion-row>
+							<ion-row>
+								<ion-col col-8>
+									<ion-item>
+										<ion-label>Pharmacy Exclusion List</ion-label>
+										<ion-checkbox color="dark" checked="true"></ion-checkbox>
+									</ion-item>
+								</ion-col>
+								<ion-col col-4>
+									<button ion-button clear>Comments</button>
+								</ion-col>
+							</ion-row>
+							<ion-item>
+								<button ion-button small clear>
+									<ion-icon name="add-circle"></ion-icon>&nbsp;Add Exclusion
+								</button>
+
+							</ion-item>
+							<ion-item text-wrap style="background-color: #eaeaea;">
+								<strong>Exclusion applied to:</strong>
+								<p>Merck Commercial, Johnson and Johnson and Abbvie Commercial Contracts. ZEPATIER, Remicade Rebated Products.</p>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+					<ion-col col-6>
+						<ion-list>
+							<ion-row>
+								<ion-col col-8>
+									<ion-item>
+										<ion-label>Definition:</ion-label>
+										<ion-select [(ngModel)]="template">
+											<ion-option value="1">One</ion-option>
+											<ion-option value="2">Two</ion-option>
+											<ion-option value="3">Three</ion-option>
+											<ion-option value="4">Four</ion-option>
+											<ion-option value="5">Five</ion-option>
+										</ion-select>
+									</ion-item>
+								</ion-col>
+								<ion-col col-4>
+									<button ion-button small color="primary">
+										<ion-icon name="add-circle"></ion-icon>
+									</button>
+									<button ion-button small color="danger">
+										<ion-icon name="trash"></ion-icon>
+									</button>
+								</ion-col>
+							</ion-row>
+							<ion-item>
+								<ion-label>Type:</ion-label>
+								<ion-select [(ngModel)]="type">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Client Segmentation:</ion-label>
+								<ion-select [(ngModel)]="notify">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>X:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Y:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-12>
+						<div float-right>
+							<button ion-button color="danger">
+								<ion-icon name="trash"></ion-icon>
+							</button>
+							<button ion-button color="secondary">
+								Save
+							</button>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>

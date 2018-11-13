@@ -1,0 +1,79 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Manufacturer:</ion-label>
+					<ion-select [(ngModel)]="manufacturer">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Contract:</ion-label>
+					<ion-select [(ngModel)]="contract">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Rebate Product:</ion-label>
+					<ion-select [(ngModel)]="contract">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Calculations
+			<div float-right>
+				<button ion-button small color="danger">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Name</ion-col>
+					<ion-col>Rate Category</ion-col>
+					<ion-col>Level</ion-col>
+					<ion-col>Client Segmentation</ion-col>
+					<ion-col>Effective Date</ion-col>
+					<ion-col>Termination Date</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>

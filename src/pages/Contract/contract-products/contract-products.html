@@ -1,0 +1,145 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Manufacturer:</ion-label>
+					<ion-select [(ngModel)]="manufacturer">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-4>
+				<ion-item>
+					<ion-label>Contract:</ion-label>
+					<ion-select [(ngModel)]="contract">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Contracted Product
+			<div float-right>
+				<button ion-button small color="danger">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Name</ion-col>
+					<ion-col>Effective Date</ion-col>
+					<ion-col>Termination Date</ion-col>
+					<ion-col>Days Before</ion-col>
+					<ion-col>Days After</ion-col>
+					<ion-col>Global Product</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Rebated Product
+			<div float-right>
+				<button ion-button small color="danger">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>Name</ion-col>
+					<ion-col>Price Type</ion-col>
+					<ion-col>Price Timing</ion-col>
+					<ion-col>Exclusion Rule</ion-col>
+					<ion-col>Edit Evaluation</ion-col>
+					<ion-col>Violation Tier</ion-col>
+					<ion-col>Violation Eval</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Rebated Product Detail
+			<div float-right>
+				<button ion-button small color="danger">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="download"></ion-icon>
+				</button>
+				<button ion-button small color="primary">
+					<ion-icon name="print"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<button ion-button small color="light">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</div>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>I/E</ion-col>
+					<ion-col>Product</ion-col>
+					<ion-col>Form</ion-col>
+					<ion-col>Strength</ion-col>
+					<ion-col>Stgth UOM</ion-col>
+					<ion-col>Route</ion-col>
+					<ion-col>NDC</ion-col>
+					<ion-col>Effective Date</ion-col>
+					<ion-col>Termination Date</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>

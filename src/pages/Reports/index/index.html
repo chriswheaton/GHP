@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Reports</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+      <ion-segment-button value="segmentation">Client Segmentation</ion-segment-button>
+      <ion-segment-button value="contract">Contract</ion-segment-button>
+      <ion-segment-button value="invoice">Invoice to Receipt</ion-segment-button>
+      <ion-segment-button value="manufacturer">Manufacturer</ion-segment-button>
+    </ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+        <div *ngSwitchCase="'segmentation'">
+			<reports-client-segmentation></reports-client-segmentation>
+		</div>
+        <div *ngSwitchCase="'contract'">
+			<reports-contract-details></reports-contract-details>
+		</div>
+        <div *ngSwitchCase="'invoice'">
+			<reports-invoice></reports-invoice>
+		</div>
+        <div *ngSwitchCase="'manufacturer'">
+			<reports-manufacturer></reports-manufacturer>
+        </div>
+      </div>
+  </div>
+</ion-content>

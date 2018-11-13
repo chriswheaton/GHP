@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Processing</h2>
+  <div padding>
+    <ion-segment [(ngModel)]="segmentSelected">
+      <ion-segment-button value="management">Management</ion-segment-button>
+      <ion-segment-button value="calculations">Calculations</ion-segment-button>
+      <ion-segment-button value="exclusions">Exclusions</ion-segment-button>
+      <ion-segment-button value="products">Products</ion-segment-button>
+      <ion-segment-button value="formulary">Formulary</ion-segment-button>
+      <ion-segment-button value="market">Market Basket</ion-segment-button>
+      <ion-segment-button value="performance">Performance</ion-segment-button>
+    </ion-segment>
+    <div padding-top padding-bottom [ngSwitch]="segmentSelected">
+        <div *ngSwitchCase="'management'">
+			<processing-management></processing-management>
+		</div>
+        <div *ngSwitchCase="'calculations'">
+			<processing-calculations></processing-calculations>
+		</div>
+        <div *ngSwitchCase="'exclusions'">
+			<processing-exclusions></processing-exclusions>
+		</div>
+        <div *ngSwitchCase="'products'">
+			<processing-products></processing-products>
+		</div>
+        <div *ngSwitchCase="'formulary'">
+			<processing-formulary></processing-formulary>
+		</div>
+        <div *ngSwitchCase="'market'">
+			<processing-market-basket></processing-market-basket>
+		</div>
+        <div *ngSwitchCase="'performance'">
+			<processing-performance></processing-performance>
+		</div>
+      </div>
+  </div>
+</ion-content>

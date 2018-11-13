@@ -1,0 +1,131 @@
+<div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<ion-item>
+					<ion-label>Instance:</ion-label>
+					<ion-select [(ngModel)]="instance">
+						<ion-option value="1">One</ion-option>
+						<ion-option value="2">Two</ion-option>
+						<ion-option value="3">Three</ion-option>
+						<ion-option value="4">Four</ion-option>
+						<ion-option value="5">Five</ion-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+			<ion-col col-6>
+				<button ion-button>
+					<ion-icon name="add-circle"></ion-icon>
+				</button>
+				<button ion-button>
+					<ion-icon name="refresh-circle"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-card>
+		<ion-card-header>
+			Instance Details
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Instance Name:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Inflation Factor:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Mix Factor:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Shift Percent:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Retail Erosion Factor:</ion-label>
+								<ion-input type="text" value=""></ion-input>
+							</ion-item>
+							<ion-item>
+								<ion-label>Dataset:</ion-label>
+								<ion-select [(ngModel)]="dataset">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Brand/Generic List:</ion-label>
+								<ion-select [(ngModel)]="brand">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+							<ion-item>
+								<ion-label>Custom Formulary Type:</ion-label>
+								<ion-select [(ngModel)]="customType">
+									<ion-option value="1">One</ion-option>
+									<ion-option value="2">Two</ion-option>
+									<ion-option value="3">Three</ion-option>
+									<ion-option value="4">Four</ion-option>
+									<ion-option value="5">Five</ion-option>
+								</ion-select>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+					<ion-col col-6>
+						<ion-list>
+							<ion-item>
+								<ion-label>Record Change:</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="r1"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>P1 Start & End</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="p1"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>P2 Start & End</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="p2"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>P3 Start & End</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="p3"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>P4 Start & End</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="p4"></ion-datetime>
+							</ion-item>
+							<ion-item>
+								<ion-label>P5 Start & End</ion-label>
+								<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="p5"></ion-datetime>
+							</ion-item>
+						</ion-list>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-12>
+						<div float-right>
+							<button ion-button color="danger">
+								<ion-icon name="trash"></ion-icon>
+							</button>
+							<button ion-button color="secondary">
+								Save
+							</button>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>
