@@ -16,7 +16,7 @@
     </ion-segment>
     <div padding-top padding-bottom [ngSwitch]="segmentSelected">
         <div *ngSwitchCase="'paymentDistribution'">
-			<component-payment-distribution [periods]="periods" [manufacturers]="manufacturers"></component-payment-distribution>
+			<component-payment-distribution [clientId]="clientId" [periods]="periods" [manufacturers]="manufacturers"></component-payment-distribution>
 		</div>
         <div *ngSwitchCase="'paymentTerms'">
 			<component-payment-terms></component-payment-terms>

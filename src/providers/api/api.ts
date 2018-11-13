@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 //import { Headers, Http, RequestOptions, URLSearchParams } from '@angular/http';
 import { LoadingController } from 'ionic-angular';
@@ -131,8 +131,12 @@ export class ApiProvider {
 	post(endpoint: string, body: any = {}, options?: any, url?: string, loader?: boolean) {
 		if (loader) this.showLoader();
 		//options = this.setHeader(options ? options : null);
-		options = {};
-		return this.http.post(url ? url : this.url + endpoint, body).map((res) => {
+		let headers = new HttpHeaders();
+		headers.append('Content-Type','application/json');
+		options = {
+			headers: headers
+		};
+		return this.http.post(url ? url : this.url + endpoint, body, options).map((res) => {
 			if (loader) this.hideLoader();
 			return res;
 		});

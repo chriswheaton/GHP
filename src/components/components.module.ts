@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+// import { CreatePaymentComponent } from '../components/modals/payment/create-payment/create-payment';
 // import { ReportsClientSegmentationComponent } from '../pages/Reports/reports-client-segmentation/reports-client-segmentation';
 // import { ReportsContractDetailsComponent } from '../pages/Reports/reports-contract-details/reports-contract-details';
 // import { ReportsInvoiceComponent } from '../pages/Reports/reports-invoice/reports-invoice';
@@ -18,6 +19,7 @@ import { NgModule } from '@angular/core';
 // import { ProcessingPerformanceComponent } from './processing-performance/processing-performance';
 @NgModule({
 	declarations: [
+		// CreatePaymentComponent
 	// ResultsCalculationsComponent,
 	// ReportsClientSegmentationComponent,
 	// ResultsContractAuditComponent,
@@ -38,6 +40,7 @@ import { NgModule } from '@angular/core';
 ],
 	imports: [],
 	exports: [
+		//CreatePaymentComponent
 	// ReportsClientSegmentationComponent,
     // ReportsContractDetailsComponent,
     // ReportsInvoiceComponent,

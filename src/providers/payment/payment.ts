@@ -35,6 +35,13 @@ export class PaymentProvider {
 		});
 	}
 
+	getPaymentReleasePendingList(data: any) {
+		let url = `${this.segment}/GetPaymentReleasePendingList`;
+		return new Promise((resolve, reject) => {
+			this.api.post(url, data).subscribe(data => resolve(data));
+		});
+	}
+
 	getFinInboundDetailByHeaderId(id: number) {
 		let url = `${this.segment}/GetFinInboundDetailByHeaderId/${id}`;
 		return new Promise((resolve, reject) => {

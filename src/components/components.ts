@@ -33,6 +33,8 @@ import { ReportsManufacturerComponent } from '../pages/Reports/reports-manufactu
 import { PaymentDistributionComponent } from '../pages/Payment/payment-distribution/payment-distribution';
 import { PaymentTermsComponent } from '../pages/Payment/payment-terms/payment-terms';
 import { ReceiptManagementComponent } from '../pages/Payment/receipt-management/receipt-management';
+import { CreatePaymentComponent } from '../components/modals/payment/create-payment/create-payment';
+
 
 import { ResultsCalculationsComponent } from '../pages/Results/results-calculations/results-calculations';
 import { ResultsClientSegmentationComponent } from '../pages/Results/results-client-segmentation/results-client-segmentation';
@@ -68,8 +70,10 @@ export {
 	ReportsContractDetailsComponent,
 	ReportsInvoiceComponent,
 	ReportsManufacturerComponent,
+	CreatePaymentComponent,
 	PaymentDistributionComponent,
 	PaymentTermsComponent,
+
 	ReceiptManagementComponent,
 	ResultsCalculationsComponent,
 	ResultsClientSegmentationComponent,
