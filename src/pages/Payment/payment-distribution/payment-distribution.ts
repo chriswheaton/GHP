@@ -1,6 +1,6 @@
 import { Input, Component } from '@angular/core';
 import { ModalController } from 'ionic-angular';
-import { CreatePaymentComponent } from '../../../components/modals/payment/create-payment/create-payment';
+import { CreatePaymentComponent, CreateBatchComponent } from '../../../components/components';
 import { PaymentProvider } from '../../../providers/payment/payment';
 
 @Component({
@@ -53,5 +53,21 @@ export class PaymentDistributionComponent {
 		let createPaymenteModal = this.modalCtrl.create(CreatePaymentComponent, data);
 		createPaymenteModal.present();
 	}
+
+	public displayReleased() {
+		console.log("displayReleased");
+	}
+
+	public createBatch() {
+		console.log("createBatch");
+		let data = {
+			param1: "Param1",
+			param2: "Param2"
+		};
+		let createBatchModal = this.modalCtrl.create(CreateBatchComponent, data);
+		createBatchModal.present();
+	}
+
+
 
 }

@@ -43,18 +43,18 @@
 				<h3>Received Amounts Pending</h3>
 				<ion-item>
 					<ion-label>Period</ion-label>
-					<ion-select [(ngModel)]="period" multiple="true">>
-						<ion-option *ngFor="let period of p" [value]="period">{{p}}</ion-option>
+					<ion-select [(ngModel)]="period" multiple="false" (ionChange)="valueSelected()">
+						<ion-option *ngFor="let period of periods" [value]="period">{{period.RunName}}</ion-option>
 					</ion-select>
 				</ion-item>
 				<ion-item>
 					<ion-label>Manfacturer</ion-label>
-					<ion-select [(ngModel)]="period" multiple="true">>
-						<ion-option *ngFor="let period of p" [value]="period">{{p}}</ion-option>
+					<ion-select [(ngModel)]="manufacturer" multiple="false" (ionChange)="valueSelected()">
+						<ion-option *ngFor="let manufacturer of manufacturers" [value]="manufacturer">{{manufacturer.PharmaName}}</ion-option>
 					</ion-select>
 				</ion-item>
-				<button ion-button color="primary">Display Released</button>
-				<button ion-button color="primary">Create Payment</button>
+				<button ion-button color="primary" (click)="displayReleased()">Display Released</button>
+				<button ion-button color="primary" (click)="createBatch()">Create Batch</button>
 			</div>
 
 			<div *ngSwitchCase="'paid'">

@@ -34,7 +34,7 @@ import { PaymentDistributionComponent } from '../pages/Payment/payment-distribut
 import { PaymentTermsComponent } from '../pages/Payment/payment-terms/payment-terms';
 import { ReceiptManagementComponent } from '../pages/Payment/receipt-management/receipt-management';
 import { CreatePaymentComponent } from '../components/modals/payment/create-payment/create-payment';
-
+import { CreateBatchComponent } from '../components/modals/payment/create-batch/create-batch';
 
 import { ResultsCalculationsComponent } from '../pages/Results/results-calculations/results-calculations';
 import { ResultsClientSegmentationComponent } from '../pages/Results/results-client-segmentation/results-client-segmentation';
@@ -73,7 +73,7 @@ export {
 	CreatePaymentComponent,
 	PaymentDistributionComponent,
 	PaymentTermsComponent,
-
+	CreateBatchComponent,
 	ReceiptManagementComponent,
 	ResultsCalculationsComponent,
 	ResultsClientSegmentationComponent,

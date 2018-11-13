@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+// import { CreateBatchComponent } from './create-batch/create-batch';
 // import { CreatePaymentComponent } from '../components/modals/payment/create-payment/create-payment';
 // import { ReportsClientSegmentationComponent } from '../pages/Reports/reports-client-segmentation/reports-client-segmentation';
 // import { ReportsContractDetailsComponent } from '../pages/Reports/reports-contract-details/reports-contract-details';
@@ -19,6 +20,7 @@ import { NgModule } from '@angular/core';
 // import { ProcessingPerformanceComponent } from './processing-performance/processing-performance';
 @NgModule({
 	declarations: [
+		// CreateBatchComponent
 		// CreatePaymentComponent
 	// ResultsCalculationsComponent,
 	// ReportsClientSegmentationComponent,
@@ -40,6 +42,7 @@ import { NgModule } from '@angular/core';
 ],
 	imports: [],
 	exports: [
+		// CreateBatchComponent
 		//CreatePaymentComponent
 	// ReportsClientSegmentationComponent,
     // ReportsContractDetailsComponent,
